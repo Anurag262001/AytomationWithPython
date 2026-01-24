@@ -33,11 +33,11 @@ from selenium.webdriver.common.by import By
 driver=webdriver.Chrome()
 driver.maximize_window()
 #len of all the rows
-rows=driver.find_element(By.XPATH,'//table[@name="booktable]//tr')
+rows=driver.find_elements(By.XPATH,'//table[@name="booktable]//tr')
 print(len(rows))
 #len of all the cols
 #to find cols we simple find th
-cols=driver.find_element(By.XPATH,'//table[@name="booktable]//tr[1]/th')
+cols=driver.find_elements(By.XPATH,'//table[@name="booktable]//tr[1]/th')
 print(len(cols))
 
 #read specific row and col data
