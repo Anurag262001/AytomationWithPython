@@ -44,7 +44,6 @@ print(len(cols))
 #this xpath will retrive 2nd row col 1 data
 data=driver.find_element(By.XPATH,'//table[@name="booktable]//tr[2]/td[1]')
 
-
 #Read all cols and rows
 print("printing all the rows and columns data......................")
 for r in range(2, len(rows)+1):
